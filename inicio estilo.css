@@ -1,0 +1,336 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-grow: 1; /* Permite que los enlaces ocupen más espacio */
+    justify-content: space-evenly; /* Espaciado uniforme entre los enlaces */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #f46161;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px; /* Añade un poco más de espacio alrededor del texto */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #db4dff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    padding: 10px 20px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero-text .btn:hover {
+    background-color: #e76f51;
+}
+
+.featured {
+    background-color: #ffe6cc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.blog-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.description-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.description-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.description-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #f46161;
+}
+
+.description-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.description-image {
+    flex: 1;
+    max-width: 35%;
+    text-align: right;
+}
+
+.description-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .description-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description-text, .description-image {
+        max-width: 100%;
+    }
+
+    .description-image img {
+        margin-top: 20px;
+    }
+}
+
+/* Destacados */
+.featured {
+    text-align: center;
+    padding: 40px 20px;
+    color: #f46161;
+}
+
+.articles-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: 250px;
+    position: relative; /* Permite superposición dentro de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120%;
+    height: 230px; /* Mantén un tamaño uniforme */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+}
+
+.card h3 {
+    position: absolute; /* Superpone el título sobre la imagen */
+    bottom: 10px; /* Posición en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente */
+    margin: 0;
+    padding: 5px 10px;
+    background: #ffe6cc9c; /* Fondo semitransparente para mejor legibilidad */
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 3px;
+    text-align: center;
+    width: calc(100% - 20px); /* Ajusta el ancho con margen */
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.card:hover h3 {
+    background:#f4c62f; /* Oscurece más el fondo al pasar el cursor */
+}
+
+/* General adjustments for centering */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: auto; /* Pushes the section to the bottom */
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f46161;
+}
+
+.contact-section p {
+    font-size: 1em;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f46161;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #f46161;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e76f51;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}

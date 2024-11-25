@@ -1,0 +1,198 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.article-banner {
+    width: 100%; /* Ocupa el 100% del ancho de la página */
+    height: auto; /* Ajusta automáticamente la altura manteniendo la proporción */
+    display: block; /* Elimina el espacio extra alrededor de la imagen */
+    margin: 0; /* Quita cualquier margen externo */
+    padding: 0; /* Quita cualquier padding extra */
+}
+
+.article-header {
+    margin: 0; /* Quita márgenes externos */
+    padding: 0; /* Quita espacios internos */
+}
+
+
+/* Estilos para el Encabezado del Artículo */
+.article-header {
+    text-align: center;
+    background-color:  #c3dafec3;
+}
+
+.article-header img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.article-header h1 {
+    font-size: 2.5em;
+    color: #ff9b92;
+}
+
+.article-header .article-author {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Estilos para el Contenido del Artículo */
+.article-content {
+    padding: 20px;
+    max-width: 800px;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: auto;
+    line-height: 1.6;
+}
+
+.article-content h2 {
+    font-size: 2em;
+    color: #ff857a;
+    margin-top: 30px;
+}
+
+/* Estilo para subtítulos dentro del artículo */
+.article-content h3 {
+    font-size: 1.5em;
+    color:  #2364cd; /* Color destacado */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para párrafos */
+.article-content p {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo para imágenes */
+.article-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0;
+}
+
+.article-content p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.article-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Menú centrado */
+.article-menu {
+    text-align: center; /* Centra el contenido del menú */
+    margin: 20px auto; /* Espacio superior/inferior y centrado horizontal */
+    max-width: 600px; /* Limita el ancho del menú */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color:   #c3dafec3; /* Fondo del menú */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+/* Estilos para la lista */
+.article-menu ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.article-menu li {
+    margin: 10px 0; /* Espaciado entre cada opción */
+}
+
+/* Estilos para los enlaces */
+.article-menu a {
+    text-decoration: none; /* Sin subrayado */
+    color: #ff9b92; /* Color de los enlaces */
+    font-size: 1.2em; /* Tamaño del texto */
+    font-weight: bold; /* Resalta el texto */
+    transition: color 0.3s;
+}
+
+.article-menu a:hover {
+    color:  #2364cd; /* Color al pasar el mouse */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.references-section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.references-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.references-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.references-box li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.references-box a {
+    color: #2364cd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.references-box a:hover {
+    color: #2364cd;
+    text-decoration: underline;
+}
